@@ -1,0 +1,29 @@
+Vulnerability Report for zero.webappsecurity.com
+
+Report Date: August 9, 2024
+Author: Sathish
+Overview
+
+The following report summarizes the findings from a recent vulnerability scan performed on the web application http://zero.webappsecurity.com. Multiple vulnerabilities were identified using different scanning tools, including OpenVAS, OWASP ZAP, and Nmap.
+Critical Findings
+
+    Total Critical Issues: 43
+    Total High-Risk Issues: 64
+    Total Medium-Risk Issues: 94
+    Total Low-Risk Issues: 20
+
+Detailed Vulnerability Breakdown
+
+1. SSL/TLS Vulnerabilities:
+
+    Vulnerability: SSLv3 Protocol CBC Cipher Suites Information Disclosure Vulnerability (POODLE)
+
+    Scanner: OpenVAS
+
+    Severity: Low
+
+    CVSS Score: 3.4
+
+    Quality of Detection (QoD): 80%
+
+    Description: The SSLv3 protocol is vulnerable to the POODLE attack, which allows an attacker to decrypt sensitive information. It is recommended to disable SSLv3 support and configure the server to use more secure protocols such as TLS 1.2 or higher.
